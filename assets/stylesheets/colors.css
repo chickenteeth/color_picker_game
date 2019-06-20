@@ -1,0 +1,160 @@
+* { 
+    font-family: "Montserrat", "Avenir";
+    text-transform: uppercase;
+}
+
+body { 
+    background: #232323;
+    margin: 0px;
+}
+
+.square {
+    width: 30%;
+    background: purple;
+    padding-bottom: 30%;
+    float: left;
+    margin: 1.66%;
+    border-radius: 15%;
+    transition: background 0.6s;
+    -webket-transition: background 0.6s;
+    -moz-transition: background 0.6s;
+}
+
+#container {
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    background-color: #5a3b70;
+    margin: 0px;
+    font-weight: normal;
+    line-height: 1.1;
+    padding: 20px 0;
+}
+
+#colorDisplay {
+    font-size: 200%;
+}
+
+#message {
+    display: inline-block;
+    width: 20%;
+}
+
+#stripe {
+    background: white;
+    height: 30px;
+    text-align: center;
+}
+
+.selected {
+    color: white;
+    background: #5a3b70;
+}
+
+button {
+    border: none;
+    background: none;
+    height: 100%;
+    font-weight: 700;
+    color: #5a3b70;
+    letter-spacing: 1px;
+    font-size: inherit;
+    transition: all 0.3s;
+    -webket-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    outline: none;
+}
+
+button:hover {
+    color: white;
+    background: #5a3b70;
+}
+
+.left {
+    animation: moveInLeft 1s ease-out;
+}
+
+.right {
+    animation: moveInRight 1s ease-out;
+}
+
+.top-mid {
+    animation: moveInTop 1s ease-out;  
+}
+
+.low-mid {
+    animation: moveInBottom 1s ease-out;
+}
+
+.center {
+    animation: centerFade 1s ease-out;
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    80% {
+        transform: translateX(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    80% {
+        transform: translateX(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    80% {
+        transform: translateX(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes centerFade {
+    0% {
+        opacity: 0;
+    }
+    80% {
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 1;
+    }
+}
